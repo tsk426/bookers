@@ -36,8 +36,47 @@
   border-color: inherit;
 }
 
-.form {
+form {
   display: block;
   margin-top: 0em;
   unicode-bidi: isolate;
+}
+
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+h5 {
+  font-size: 13px;
+  font-weight: 40;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.link-button {
+    display: flex;
+    gap: 10px; /* ボタン間のスペース */
+    justify-content: flex-start; /* 左寄せにする */
+}
+
+@media (max-width: 600px) {
+  .link-buttons {
+    flex-wrap: wrap;  /* アイテムが折り返す */
+    gap: 5px;
+  }
+}
+
+.box-title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.box-body {
+  margin-top: 0;
+  margin-bottom: 0;
 }
